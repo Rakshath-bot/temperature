@@ -20,3 +20,18 @@ plt.ylabel('Values')
 
 # Display the plot
 plt.show()
+
+ #Data for the pie chart
+labels = ['Tables', 'Charts', 'Graphs', 'Dashboards']
+sizes = [25, 35, 20, 20]  # Hypothetical distribution of usage
+colors = ['gold', 'lightblue', 'lightgreen', 'coral']
+explode = (0, 0.1, 0, 0)  # Highlight 'Charts' for emphasis
+
+# Create the pie chart
+plt.pie(sizes, labels=labels, colors=colors, explode=explode, autopct='%1.1f%%', startangle=140)
+
+# Add title
+plt.title('Distribution of Data Visualization Types')
+
+# Display the plot
+plt.show()
